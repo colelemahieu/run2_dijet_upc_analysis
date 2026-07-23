@@ -1,0 +1,25 @@
+PRODUCE PYTHIA PHOTONCULEAR MINIAOD
+
+
+1. Using Pythia 8.311, make the LHE files via condor
+1.5 remove the LHE comments via condor
+
+
+2. LHE Driver Command (using CMSSW_11_2_1_patch2):
+cmsDriver.py step1 --filein file:/afs/cern.ch/user/c/clemahie/Pythia8p311/pythia8311/examples/gamma_gluon_PbPb_2018_testfile_noComments.lhe  --fileout file:my_try_gamma_gluon_PbPb.root --mc --eventcontent LHE --datatier LHE --conditions 112X_upgrade2018_realistic_HI_v9 --step NONE --nThreads 8 --era Run2_2018_pp_on_AA -n 1000
+ 
+
+3. Gen-Sim Step:
+cmsDriver.py test1/test2/python/Fragment.py --mc --eventcontent RAWSIM --datatier GEN-SIM --conditions 112X_upgrade2018_realistic_HI_v9 --beamspot RealisticPbPbCollision2018 --step GEN,SIM --scenario HeavyIons --geometry DB:Extended --era Run2_2018_pp_on_AA --number 1000 --filein file:my_try_gamma_gluon_PbPb.root --fileout file:gensim.root
+
+
+4. Digi Step:
+cmsDriver.py step2 -s --mc --eventcontent RAWSIM --datatier GEN-SIM-DIGI-RAW-HLTDEBUG --conditions 112X_upgrade2018_realistic_HI_v9 --step DIGI,L1,DIGI2RAW,HLT:HIon --geometry DB:Extended --era Run2_2018_pp_on_AA --filein file:gensim.root --fileout file:stepdigi.root --nThreads 8 -n 1000 --mc
+
+
+5. Reco Step:
+cmsDriver.py mini --mc --eventcontent MINIAODSIM --datatier MINIAODSIM --conditions 112X_upgrade2018_realistic_HI_v9 --step RAW2DIGI,L1Reco,RECO,PAT --era Run2_2018_pp_on_AA --nThreads 8 --filein file:stepdigi.root --fileout file:stepAODMINIAOD.root -n 1000
+
+
+6. Forest Step:
+cmsRun 
