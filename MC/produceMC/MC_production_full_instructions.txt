@@ -22,4 +22,4 @@ cmsDriver.py mini --mc --eventcontent MINIAODSIM --datatier MINIAODSIM --conditi
 
 
 6. Forest Step:
-cmsRun 
+cmsRun forest_miniAOD_112X_MC.py 
