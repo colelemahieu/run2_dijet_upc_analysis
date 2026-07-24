@@ -1,4 +1,6 @@
-// getSystematics.C
+// getResolutions.C
+// This code plots resolutions as a function of pt and eta for jet kinematic variables
+// (see Systematic uncertainties section in Analysis Note)
 
 #include <iostream>
 #include <fstream>
@@ -91,8 +93,9 @@ void makeSystematicsPlot_Pt(TH1 *h_sigma, const char *titleX, const char *titleY
 
 
 
-void getSystematics()
+void getResolutions()
 {
+  // read in MC file
   TFile *file = new TFile("/home/colelemahieu/Research2023/Run2/Files/allPlots_reco_full_12p5.root");
 
   // fits
