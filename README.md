@@ -26,7 +26,7 @@ This repository is organized into the following stages:
    - calculates `v₂ = ⟨cos(2φ)⟩`,
    - saves the output histograms.
 
-4. **Produce Plots** `Plots`
+4. **Produce Plots:** `Plots`
    - makes resolution plots, general AN plots, and comparison plots
 
 ### Links
