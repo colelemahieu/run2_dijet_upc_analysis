@@ -26,6 +26,9 @@ This repository is organized into the following stages:
    - calculates `v₂ = ⟨cos(2φ)⟩`,
    - saves the output histograms.
 
+4. **Produce Plots** `Plots`
+   - makes resolution plots, general AN plots, and comparison plots
+
 ### Links
 - [CADI](https://cmsfence.cern.ch/alcm/cmsanalysis/details/ancode=HIN-24-022)
 - [Twiki](https://twiki.cern.ch/twiki/bin/viewauth/CMS/ReviewPbPb2018UPCDijets?extralog=-%20caching%20topic)
