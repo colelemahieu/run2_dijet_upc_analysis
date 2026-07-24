@@ -1,6 +1,7 @@
 // AN_resolution.C
 // This code makes resolution plots for the analysis note
 // ran with run_ANresolution.sh
+// (see Resolution of Variables section in Analysis Note)
 
 #include <iostream>
 #include <fstream>
