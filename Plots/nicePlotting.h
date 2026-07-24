@@ -1,4 +1,5 @@
 // nicePlotting.h
+// This code contains helper functions for plotting
 
 #include <iostream>
 #include <fstream>
