@@ -29,5 +29,13 @@ This repository is organized into the following stages:
 4. **Produce Plots:** `Plots`
    - makes resolution plots, general AN plots, and comparison plots
 
+5. **Produce Systematic and Result Plots**
+   - **v₂ and v₄ vs QT:** `Systematics_and_Results/phi_vs_qt`
+   - **v₂ and v₄ vs rapidity:** `Systematics_and_Results/phi_vs_rap`
+
+   This step:
+   - calculates average bin systematics and adds them in quadrature
+   - makes systematic plots and final result plots
+   - makes plots summarizing systematic contributions
 
 
