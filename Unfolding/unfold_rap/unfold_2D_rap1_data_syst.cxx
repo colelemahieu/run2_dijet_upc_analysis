@@ -474,8 +474,8 @@ void unfold_2D_rap1_data_syst()
       if (forward_rapgap<fabs(backward_rapgap)) continue;
 
       // Evt labels (for rap bin0)
-      if (nGen!=0 && nGen!=1 && (fabs(genEta[0]) < 2.4) && (fabs(genEta[1]) < 2.4) && (genPt[0]>30) && (genPt[1]>20) && (PT_norm_gen>QT_norm_gen) && (genPt[2]<20) && (QT_norm_gen<40) && (pf_hfP_max<hfP_noiseTH) && (pf_heP_max<heP_noiseTH) && (pf_eeP_max<eeP_noiseTH)) passGenCuts=1;
-      if (nRef!=0 && nRef!=1 && (fabs(jetEta[0]) < 2.4) && (fabs(jetEta[1]) < 2.4) && (jetPt[0]>30) && (jetPt[1]>20) && (PT_norm>QT_norm) && (jetPt[2]<20) && (QT_norm<40) && (pf_hfP_max<hfP_noiseTH) && (pf_heP_max<heP_noiseTH) && (pf_eeP_max<eeP_noiseTH)) passRecoCuts=1;
+      if (nGen!=0 && nGen!=1 && (fabs(genEta[0]) < 3.0) && (fabs(genEta[1]) < 3.0) && (genPt[0]>30) && (genPt[1]>20) && (PT_norm_gen>QT_norm_gen) && (genPt[2]<20) && (QT_norm_gen<40) && (pf_hfP_max<hfP_noiseTH) && (pf_heP_max<heP_noiseTH) && (pf_eeP_max<eeP_noiseTH)) passGenCuts=1;
+      if (nRef!=0 && nRef!=1 && (fabs(jetEta[0]) < 3.0) && (fabs(jetEta[1]) < 3.0) && (jetPt[0]>30) && (jetPt[1]>20) && (PT_norm>QT_norm) && (jetPt[2]<20) && (QT_norm<40) && (pf_hfP_max<hfP_noiseTH) && (pf_heP_max<heP_noiseTH) && (pf_eeP_max<eeP_noiseTH)) passRecoCuts=1;
 
       if (passGenCuts==1) passGenCutsCount=passGenCutsCount+1;
       if (passRecoCuts==1) passRecoCutsCount=passRecoCutsCount+1;
