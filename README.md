@@ -26,14 +26,14 @@ This repository is organized into the following stages:
    - calculates `v₂ = ⟨cos(2φ)⟩`,
    - saves the output histograms.
 
-**4. Produce Plots:** `Plots`
+**4. Produce plots:** `Plots`
    - makes resolution plots, general AN plots, and comparison plots
 
 **5. Unfolding:**
    - **2D unfolding, phi vs QT:** `Unfolding/unfold_qt/`
    - **2D unfolding, phi vs rapidity:** `Unfolding/unfold_rap/`
 
-**6. Produce Systematic and Result Plots**
+**6. Produce systematic and result plots**
    - **v₂ and v₄ vs QT:** `Systematics_and_Results/phi_vs_qt/`
    - **v₂ and v₄ vs rapidity:** `Systematics_and_Results/phi_vs_rap/`
 
