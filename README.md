@@ -32,6 +32,7 @@ This repository is organized into the following stages:
 **5. Unfolding:**
    - **2D unfolding, phi vs QT:** `Unfolding/unfold_qt/`
    - **2D unfolding, phi vs rapidity:** `Unfolding/unfold_rap/`
+   - These directories contain examples of scripts used for 2D unfolding with RooUnfold.
 
 **6. Produce systematic and result plots**
    - **v₂ and v₄ vs QT:** `Systematics_and_Results/phi_vs_qt/`
