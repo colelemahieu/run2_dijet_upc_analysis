@@ -44,3 +44,5 @@ This repository is organized into the following stages:
    - makes plots summarizing systematic contributions
 
 
+### ROOT files
+ROOT files created by Steps 1-3 have been uploaded to `/afs/cern.ch/user/c/clemahie/public/rootFiles_HIN_24_022/`
